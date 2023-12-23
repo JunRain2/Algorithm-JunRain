@@ -1,4 +1,4 @@
-package java_interview.ch05;
+package tuk_algorithm;
 
 import java.util.*;
 
