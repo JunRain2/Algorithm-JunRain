@@ -1,4 +1,4 @@
-package java_interview.ch05;
+package java_interview.ch06;
 
 public class LongestPalindromicSubstring {
 	/**
@@ -47,5 +47,5 @@ public class LongestPalindromicSubstring {
 /**
  * 2칸짜리 투 포인터와 3칸짜리 투 포인터는 팰린드롬을 찾을 때 까지 계속 이동
  * 팰린드롬을 찾으면 멈춰서 윈도우의 크기를 가운데를 기준으로 확장, 즉 좌우로 커진다.
- * 팰린드롬이 짝수일 경우와 홀수일 경우가 있기 때문에 모두 판별해야 한다.
+ * 팰린드롬이 짝수일 경우와 홀수일 경우가 있기 때문에 2칸, 3칸으로 나눔.
  */

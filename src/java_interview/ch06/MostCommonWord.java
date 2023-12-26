@@ -1,6 +1,5 @@
-package java_interview.ch05;
+package java_interview.ch06;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
