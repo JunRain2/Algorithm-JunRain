@@ -49,3 +49,5 @@ public class LongestPalindromicSubstring {
  * 팰린드롬을 찾으면 멈춰서 윈도우의 크기를 가운데를 기준으로 확장, 즉 좌우로 커진다.
  * 팰린드롬이 짝수일 경우와 홀수일 경우가 있기 때문에 2칸, 3칸으로 나눔.
  */
+
+// https://leetcode.com/problems/longest-palindromic-substring

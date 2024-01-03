@@ -18,3 +18,4 @@ public class ArrayPartition {
 		return result;
 	}
 }
+// https://leetcode.com/problems/array-partition

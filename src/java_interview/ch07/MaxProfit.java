@@ -24,4 +24,4 @@ public class MaxProfit {
 		return maxProfit;
 	}
 }
-
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock
