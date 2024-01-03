@@ -63,6 +63,12 @@ public class SwapPairs {
 	}
 
 	// 재귀
+	/**
+	 * 반복 변수와 달리 포인터 역할을 하는 p 변수는 하나만 있어도 충분하며, 더미 노드를 만들 필요도 없이 head를 바로 리턴할 수 있어 공간 복잡도도 낮다.
+	 * p는 head.next가 되고 p.next는 head가 된다.
+	 * 재귀 호출로 계속 스압된 값을 리턴받게 된다.
+	 * 리턴되면서 연결 리스트가 이어지게 된다.
+	 */
 	public ListNode swapPairsRecursive(ListNode head) {
 		if (head != null && head.next != null) {
 			ListNode p = head.next;
