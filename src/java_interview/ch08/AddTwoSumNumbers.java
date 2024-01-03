@@ -2,6 +2,7 @@ package java_interview.ch08;
 
 import java.math.BigInteger;
 
+// leetcode 2번
 public class AddTwoSumNumbers {
 	public ListNode reverseList(ListNode head) {
 		ListNode prev = null, node = head;
@@ -77,7 +78,7 @@ public class AddTwoSumNumbers {
 
 			// 노드의 값으로 사용할 나머지 계산
 			remainder = (sum + carry) % 10;
-			// 10으로 나누었을 때 몫은 자릿수가 증가했다는 의미이므로 자리올림수로 사용
+			// 10으로 나누었을 때 몫은 자릿수가 증가했다는 의미이므로 자리올림수로 사용 -> 즉 다음 loop때 사용 할 carry
 			carry = (sum + carry) / 10;
 			// 나머지는 다음 노드의 값으로 지정
 			node.next = new ListNode(remainder);
