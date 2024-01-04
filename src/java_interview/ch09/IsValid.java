@@ -74,4 +74,6 @@ public class IsValid {
 		return stack.size() == 0;
 	}
 }
+// 무리하게 오토박싱이 수행되는 것을 방치하거나 무턱대고 항상 참조형만 사용하는 것은 가급적 지양해야한다.
+// 값을 가져오기만 할 때 -> 참조형, 많은 계산이 일어날 때 -> 기본형
 // https://leetcode.com/problems/valid-parentheses/
