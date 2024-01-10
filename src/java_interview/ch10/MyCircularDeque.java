@@ -14,6 +14,8 @@ public class MyCircularDeque {
 	}
 
 	public boolean insertFront(int value) {
+		// Early return
+		// else문 없이 return 문 만으로 분기를 종료시킴
 		if (isFull()) {
 			return false;
 		}
