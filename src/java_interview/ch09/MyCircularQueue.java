@@ -1,5 +1,6 @@
 package java_interview.ch09;
 
+// 선 증가
 public class MyCircularQueue {
 	int[] q;
 	int front = 0, rear = -1, len = 0;
@@ -10,6 +11,7 @@ public class MyCircularQueue {
 
 	public boolean enQueue(int value) {
 		if (!this.isFull()) {
+			// 삽입되면 증가
 			this.rear = (this.rear + 1) % this.q.length;
 			this.q[rear] = value;
 			this.len++;
