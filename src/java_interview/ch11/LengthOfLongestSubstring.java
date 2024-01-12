@@ -33,6 +33,7 @@ public class LengthOfLongestSubstring {
 
 	// 슬라이딩 윈도우와 투 포인터로 크기 조절, 5ms로 아주 빠른 속도
 	public int lengthOfLongestSubstringTwoPointer(String s) {
+		// 각각의 문자가 등장한 최종 위치를 저장해두는 해시맵
 		Map<Character, Integer> used = new HashMap<>();
 		int maxLength = 0;
 		int left = 0;
@@ -41,6 +42,7 @@ public class LengthOfLongestSubstring {
 		for (char c : s.toCharArray()) {
 			// 이미 등장했던 문자이고, 슬라이딩 윈도우의 안쪽에 있다면 left 위치 업데이트
 			if (used.containsKey(c) && left <= used.get(c)) {
+				// right와 left 사이에 중복된 값인 c는 하나밖에 존재하지 않게 된다.
 				left = used.get(c) + 1;
 			} else {
 				// 최대 부분 문자열 길이 업데이트
