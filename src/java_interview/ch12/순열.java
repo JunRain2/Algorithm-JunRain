@@ -31,6 +31,8 @@ public class 순열 {
 			dfs(result, subListTmp, pathTmp);
 		}
 	}
-
+	/**
+	 * 전화번호 문자 조합에서 사용했던 컨셉을 사용하여 문제를 풀었다.
+	 */
 }
 // https://leetcode.com/problems/permutations/description/
