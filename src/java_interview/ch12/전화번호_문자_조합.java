@@ -32,6 +32,7 @@ public class 전화번호_문자_조합 {
 		dfs(result, dic, digits, 0, new StringBuilder());
 		return result;
 	}
+
 	public void dfs(List<String> result, Map<Character, List<Character>> dic, String digits, int index,
 		StringBuilder path) {
 		// 끝까지 탐색했으면 결과를 저장하고 리턴
@@ -42,6 +43,8 @@ public class 전화번호_문자_조합 {
 		// 현재 자리 숫자에 해당하는 모든 문자열 탐색
 		for (Character c : dic.get(digits.charAt(index))) {
 			// 현재 자리 + 1, 지금까지 구성된 문자열 path 이용 재귀 DFS
+			// 최종 결과는 문자열이 저장된 path가 되며, 결과로 처리한 이휴에는 path의 내용이 유지되면 안된다.
+			// path는 내용이 유지되면 안되기 때문에 new StringBuilder(path)를 통해 새로운 인스턴스를 생성해 넘겨준다.
 			dfs(result, dic, digits, index + 1, new StringBuilder(path).append(c));
 		}
 	}
