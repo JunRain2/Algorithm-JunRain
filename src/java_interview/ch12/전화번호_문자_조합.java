@@ -38,6 +38,7 @@ public class 전화번호_문자_조합 {
 		// 끝까지 탐색했으면 결과를 저장하고 리턴
 		if (path.length() == digits.length()) {
 			result.add(String.valueOf(path));
+			return;
 		}
 
 		// 현재 자리 숫자에 해당하는 모든 문자열 탐색
