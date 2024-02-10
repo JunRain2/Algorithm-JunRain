@@ -60,7 +60,7 @@ public class 코스_일정 {
 
 	/**
 	 * 가지치기를 이용한 최적화
-	 * 한 번 방문했던 노드를 두 번 이상 방문하지 않도록 무조건 true를 리턴하도록 구조를 개\
+	 * 한 번 방문했던 노드를 두 번 이상 방문하지 않도록 무조건 true를 리턴하도록 구조를 개선
 	 */
 	public boolean canFinish2(int numCourse, int[][] prerequisites) {
 		Map<Integer, List<Integer>> finishToTakeMap = new HashMap<>();
