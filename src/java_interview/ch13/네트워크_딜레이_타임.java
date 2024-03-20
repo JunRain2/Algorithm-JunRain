@@ -7,6 +7,10 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+/**
+ * 트리에서 같은 깊이를 모두 탐색해서 pq에 담는다.
+ * 깊이 상관없이 pq에서 가장 작은 값을 골라서, 트리를 수색하면서 값이 제일 적게 드는 경로를 탐색한다.
+ */
 public class 네트워크_딜레이_타임 {
 	/**
 	 * 2가지 사항을 판별
@@ -26,7 +30,7 @@ public class 네트워크_딜레이_타임 {
 		// 우선순위 큐 생성, 값이 (도착지, 소요 시간)으로 구성되므로
 		// 정렬 기준으로 도착지(key)와 소요 시간(value) 중 소요 시간을 기준으로 한다.
 		// Map이 아닌 Map.Entry를 사용 한 이유
-		// -> 맵은 기본적으로 목록형이기 때문에 값을 조회하려면 항상 for 문으로 순회하여 추출하는 번거로운 과정이 필요
+		// -> 맵은 기본적으로 목록형(List)이기 때문에 값을 조회하려면 항상 for 문으로 순회하여 추출하는 번거로운 과정이 필요
 		// -> Map.Entry는 항상 1개의 아이템을 의미하므로 getKey(), getValue() 메소드로 순회 과정 없이 즉시 값을 추출할 수 있다.
 		Queue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<>(Map.Entry.comparingByValue());
 		// (도착지, 소요 시간)을 큐에 삽입, 시작은 출발지 k이며, 소요 시간은 출발지이므로 당연히 0이다.
