@@ -1,5 +1,5 @@
 
-Œ	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰€ö J$0b28c42c-62fc-4958-9088-349927a85db9
-	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(†›øÕÿÿÿÿÿJ$b0a67ece-e05c-443e-95af-88a33bf06cf4
+Œ	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰€ö J$282cb57b-c3e0-4c11-9119-f1c1070e3fb4
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(†›øÕÿÿÿÿÿJ$7bd90b42-9773-484e-8966-fdf05f1ec2bc
 ‰
-java:S38244"HReplace this "Map.containsKey()" with a call to "Map.computeIfAbsent()".( ÄƒÇşÿÿÿÿJ$5b827eef-345a-4a63-b39a-2dbdb9854489
+java:S38244"HReplace this "Map.containsKey()" with a call to "Map.computeIfAbsent()".( ÄƒÇşÿÿÿÿJ$4f5f1a00-963d-461d-803a-e66f582cf7d4
