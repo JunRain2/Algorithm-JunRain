@@ -1,10 +1,8 @@
 package java_interview.ch12;
 
-import java.net.Inet4Address;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class 조합 {
 	public List<List<Integer>> combine(int n, int k) {
@@ -33,6 +31,7 @@ public class 조합 {
 			dfs(n, k, i, result, tmp);
 		}
 	}
+
 	/**
 	 * 느리긴 하지만 작동을 한다...
 	 * 결국에는 이전, 순열과 같은 매커니즘으로 작동
