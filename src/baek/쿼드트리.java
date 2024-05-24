@@ -21,9 +21,6 @@ public class 쿼드트리 {
 	}
 
 	static String dfs(int horizontalStart, int horizontalEnd, int verticalStart, int verticalEnd, int[][] quadTree) {
-		if(horizontalStart == horizontalEnd && verticalStart == verticalEnd) {
-			return String.valueOf(quadTree[verticalStart][horizontalStart]);
-		}
 		StringBuilder sb = new StringBuilder();
 		int horizontalMid = horizontalStart + (horizontalEnd - horizontalStart) / 2;
 		int verticalMid = verticalStart + (verticalEnd - verticalStart) / 2;
