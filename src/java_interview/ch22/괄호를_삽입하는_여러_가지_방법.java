@@ -1,11 +1,18 @@
 package java_interview.ch22;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class 괄호를_삽입하는_여러_가지_방법 {
+	HashMap<String, List<Integer>> memo = new HashMap<>();
+
 	public List<Integer> diffWaysToCompute(String expression) {
 		List<Integer> result = new ArrayList<>();
+		// 이미 계산해둔 동일한 표현식이라면 기존 결과를 재활용
+		if (memo.containsKey(expression)) {
+			return memo.get(expression);
+		}
 
 		for (int i = 0; i < expression.length(); i++) {
 			char c = expression.charAt(i);
@@ -33,6 +40,8 @@ public class 괄호를_삽입하는_여러_가지_방법 {
 		if (result.isEmpty()) {
 			result.add(Integer.parseInt(expression));
 		}
+		// 계산 결과는 추후 재활용을 위해 저장
+		memo.put(expression, result);
 
 		return result;
 	}
